@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HireMyResume</title>
+    <style>
+        body {
+            background-image: url("/static/background.jpg");
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+            font-family: Arial;
+        }
+        .login-box {
+            background-color: rgba(0,0,0,0.6);
+            padding: 20px;
+            display: inline-block;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hire My Resume</h1>
+    <p>The AI platform that applies to jobs automatically</p>
+
+    <div class="login-box">
+        <h2>Login</h2>
+        <form action="/login" method="post">
+            <input type="text" name="email" placeholder="Email" 
+required><br><br>
+            <input type="password" name="password" placeholder="Password" 
+required><br><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
+
+
