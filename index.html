@@ -1,10 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hire My Resume</title>
+    <title>Hire My Resume - Login</title>
+    <style>
+        body {
+            background-image: url("/static/background.jpg");
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        h1 {    
+            color: white;
+            text-align: center;
+        }
+        form {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border-radius: 10px;
+        }
+        label, input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to HireMyResume</h1>
     <p>Your website is under construction. Stay tuned!</p>
+
+    <h2>Login</h2>
+    <form method="POST" action="/login">
+        <label>Email:</label>
+        <input type="email" name="email" required><br><br>
+        <label>Password:</label>
+        <input type="password" name="password" required><br><br>
+        <button type="submit">Login</button>
+    </form>
 </body>
 </html>
+
